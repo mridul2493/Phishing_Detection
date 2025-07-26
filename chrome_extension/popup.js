@@ -1,7 +1,7 @@
 document.getElementById("checkBtn").addEventListener("click", function () {
   const emailText = document.getElementById("emailText").value;
 
-  fetch("https://phishing-detection-ujym.onrender.com", {
+  fetch("https://phishing-detection-ujym.onrender.com/predict", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
